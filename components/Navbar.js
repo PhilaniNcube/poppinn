@@ -56,14 +56,8 @@ const Navbar = () => {
           <Link href="/">
             <a className="nav-link">HOME</a>
           </Link>
-          <Link href="/about">
-            <a className="nav-link">ABOUT</a>
-          </Link>
-          <Link href="/properties">
-            <a className="nav-link">PROPERTIES</a>
-          </Link>
-          <Link href="/contact">
-            <a className="nav-link">CONTACT</a>
+          <Link href="/travel">
+            <a className="nav-link">TRAVEL</a>
           </Link>
         </nav>
       </div>

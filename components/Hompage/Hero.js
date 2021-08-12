@@ -1,67 +1,128 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
+import Image from 'next/image';
+import { useKeenSlider } from 'keen-slider/react';
+import 'keen-slider/keen-slider.min.css';
 import Button from '../Button';
 
 const Wrapper = styled.div`
   width: 100%;
-  min-height: 100vh;
-  position: relative;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-image: linear-gradient(to right, #fff 50%, 50%, transparent),
-    url('images/lounge2.jpg');
-
-  /* &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    background-color: #fff;
-  } */
+  height: 90vh;
 
   .container {
     height: 90vh;
+    position: relative;
+  }
+`;
+
+const Slide = styled.div`
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &.slide-1 {
+    background-image: url(images/bedroom.jpg);
+  }
+  &.slide-2 {
+    background-image: url(images/kitchen.jpg);
+  }
+  &.slide-3 {
+    background-image: url(images/lounge2.jpg);
+  }
+  &.slide-4 {
+    background-image: url(images/pool.jpg);
+  }
+
+  .text {
+    height: 100%;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    z-index: 333;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.2537710084033614) 0%,
+      rgba(255, 255, 255, 0.6110819327731092) 100%
+    );
 
     h1 {
-      max-width: 85%;
-      font-weight: var(--light-font);
-      letter-spacing: 0.2rem;
-      /* text-transform: uppercase; */
-      /* font-weight: var(--light-font); */
-      span {
-        /* font-weight: var(--medium-font); */
-        /* text-transform: uppercase; */
-        color: var(--red);
-      }
+      font-size: var(--section-title);
+      color: var(--black);
     }
 
-    p {
-      font-size: 2rem;
-      max-width: 50%;
-      margin-top: 1.5rem;
+    h2 {
+      font-size: var(--title);
+      max-width: 20ch;
+      color: var(--red);
     }
   }
 `;
 
 const Hero = () => {
+  const [pause, setPause] = useState(false);
+  const timer = useRef();
+  const [sliderRef, slider] = useKeenSlider({
+    loop: true,
+    duration: 2500,
+    dragStart: () => {
+      setPause(true);
+    },
+    dragEnd: () => {
+      setPause(false);
+    },
+  });
+
+  useEffect(() => {
+    sliderRef.current.addEventListener('mouseover', () => {
+      setPause(true);
+    });
+    sliderRef.current.addEventListener('mouseout', () => {
+      setPause(false);
+    });
+  }, [sliderRef]);
+
+  useEffect(() => {
+    timer.current = setInterval(() => {
+      if (!pause && slider) {
+        slider.next();
+      }
+    }, 3000);
+    return () => {
+      clearInterval(timer.current);
+    };
+  }, [pause, slider]);
+
   return (
     <Wrapper>
-      <div className="container">
-        <h1 className="title">
-          <span>Popp Inn</span> <br></br>Property Management
-        </h1>
-        <p>
-          Popp Inn is a dynamic upmarket property management company that is
-          passionate about people and the leisure industry.
-        </p>
-        <Button>Properties</Button>
+      <div className="container" ref={sliderRef} className="keen-slider">
+        <Slide className="keen-slider__slide slide-1">
+          <div className="text">
+            <h1>Bryanston Appartment</h1>
+            <h2>Luxurious Bedroom</h2>
+          </div>
+        </Slide>
+        <Slide className="keen-slider__slide slide-2">
+          <div className="text">
+            <h1>Bryanston Appartment</h1>
+            <h2>Well Appointed Kitchen</h2>
+          </div>
+        </Slide>
+        <Slide className="keen-slider__slide slide-3">
+          <div className="text">
+            <h1>Bryanston Appartment</h1>
+            <h2>Space to relax during the day</h2>
+          </div>
+        </Slide>
+        <Slide className="keen-slider__slide slide-4">
+          <div className="text">
+            <h1>Bryanston Appartment</h1>
+            <h2>Swimming Pool</h2>
+          </div>
+        </Slide>
       </div>
     </Wrapper>
   );

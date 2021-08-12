@@ -25,9 +25,23 @@ const Wrapper = styled.section`
       box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
         rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 
+      @media screen and (max-width: 800px) {
+        width: 90%;
+        background: rgb(255, 255, 255);
+        background: linear-gradient(
+          90deg,
+          rgba(255, 255, 255, 0.3337710084033614) 0%,
+          rgba(255, 255, 255, 0.6110819327731092) 100%
+        );
+      }
+
       p {
         margin-top: 2rem;
         max-width: 80%;
+
+        @media screen and (max-width: 800px) {
+          width: 100%;
+        }
       }
     }
   }

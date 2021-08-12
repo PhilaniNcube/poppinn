@@ -13,6 +13,10 @@ const Wrapper = styled.section`
     display: grid;
     grid-template-columns: 1fr 1fr;
 
+    @media screen and (max-width: 800px) {
+      grid-template-columns: 1fr;
+    }
+
     .imgBox,
     .info {
       height: 100%;
@@ -38,6 +42,10 @@ const Wrapper = styled.section`
       border-radius: 0.4rem;
       box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
         rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+
+      @media screen and (max-width: 800px) {
+        transform: translateX(0%);
+      }
 
       p {
         margin: 1rem 0;

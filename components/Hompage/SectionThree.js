@@ -17,6 +17,10 @@ const Wrapper = styled.section`
       align-items: center;
       padding: 5rem;
 
+      @media screen and (max-width: 800px) {
+        width: 100%;
+      }
+
       h2,
       p {
         text-align: center;

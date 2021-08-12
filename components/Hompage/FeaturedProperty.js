@@ -13,6 +13,10 @@ const Wrapper = styled.section`
     display: grid;
     grid-template-columns: 1fr 1fr;
 
+    @media screen and (max-width: 800px) {
+      grid-template-columns: 1fr;
+    }
+
     .imgBox {
       height: 100%;
       background-image: url('/images/lounge5.jpg');
@@ -79,6 +83,10 @@ const Wrapper = styled.section`
         .capacity {
           display: flex;
           justify-content: space-around;
+
+          @media screen and (max-width: 800px) {
+            flex-direction: column;
+          }
 
           div {
             font-size: 4rem;
