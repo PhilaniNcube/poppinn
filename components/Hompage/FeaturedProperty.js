@@ -112,7 +112,7 @@ const FeaturedProperty = () => {
         <div className="imgBox"></div>
         <div className="details">
           <h3>
-            <strong>Bryonston</strong> Modern Apartment
+            <strong>Bryanston</strong> Modern Apartment
           </h3>
 
           <p>
