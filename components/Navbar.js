@@ -31,8 +31,9 @@ const Wrapper = styled.header`
       align-items: center;
 
       .nav-link {
-        padding-left: 2rem;
+        padding-left: 1.4rem;
         font-size: 1.6rem;
+        text-transform: capitalize;
       }
 
       button {
@@ -40,7 +41,7 @@ const Wrapper = styled.header`
         border: none;
         outline: none;
         color: #fff;
-        margin: auto 1rem;
+        margin-left: 2rem;
         padding: 0.5rem 1.5rem;
         font-size: 1.6rem;
         border-radius: 2rem;
@@ -63,10 +64,10 @@ const Navbar = () => {
 
         <nav className="nav-links">
           <Link href="/">
-            <a className="nav-link">HOME</a>
+            <a className="nav-link">Home</a>
           </Link>
           <Link href="/travel">
-            <a className="nav-link">TRAVEL</a>
+            <a className="nav-link">Travel</a>
           </Link>
           <button>Book Now</button>
         </nav>
