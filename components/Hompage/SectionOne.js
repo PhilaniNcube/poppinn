@@ -34,7 +34,7 @@ const Wrapper = styled.section`
       text-align: center;
       display: flex;
       flex-direction: column;
-      min-height: 70%;
+      min-height: 100%;
       width: 80%;
       margin: auto;
       padding: 3rem 4rem;

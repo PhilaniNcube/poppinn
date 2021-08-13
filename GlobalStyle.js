@@ -62,8 +62,9 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .container {
+      width: 90%;
       max-width: 1280px;
-      min-width: 300px;
+      min-width: 280px;
       margin: 0 auto;
   }
 

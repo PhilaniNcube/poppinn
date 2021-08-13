@@ -4,14 +4,14 @@ import styled from 'styled-components';
 
 const Wrapper = styled.section`
   width: 100%;
-  max-height: 60vh;
+
   margin: 3rem 0;
 
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1.5rem;
-    margin: 3rem auto;
+    margin: 4rem auto;
   }
 `;
 
