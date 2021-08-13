@@ -1,5 +1,6 @@
 import { Fragment } from 'react';
 import styled from 'styled-components';
+import Description from '../components/Hompage/Description';
 import FeaturedProperty from '../components/Hompage/FeaturedProperty';
 import Hero from '../components/Hompage/Hero';
 import SectionOne from '../components/Hompage/SectionOne';
@@ -10,10 +11,10 @@ export default function Home() {
   return (
     <Fragment>
       <Hero />
+      <Description />
       <SectionOne />
-      <SectionTwo />
-      <SectionThree />
       <FeaturedProperty />
+      <SectionTwo />
     </Fragment>
   );
 }

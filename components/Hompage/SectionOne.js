@@ -6,12 +6,12 @@ import Button from '../Button';
 const Wrapper = styled.section`
   min-height: 100vh;
   width: 100%;
-  margin: 10rem auto;
+  margin: 2rem auto;
 
   .container {
     height: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
 
     @media screen and (max-width: 800px) {
       grid-template-columns: 1fr;
@@ -31,14 +31,14 @@ const Wrapper = styled.section`
     }
 
     .info .text {
+      text-align: center;
       display: flex;
       flex-direction: column;
       min-height: 70%;
-      /* width: 80%; */
+      width: 80%;
       margin: auto;
       padding: 3rem 4rem;
-      transform: translateX(-40%);
-      background-color: var(--light);
+
       border-radius: 0.4rem;
       box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
         rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
@@ -51,15 +51,6 @@ const Wrapper = styled.section`
         margin: 1rem 0;
       }
     }
-
-    .imgBox div {
-      height: 100%;
-
-      img {
-        height: 100%;
-        object-fit: cover;
-      }
-    }
   }
 `;
 
@@ -67,9 +58,6 @@ const SectionOne = () => {
   return (
     <Wrapper>
       <div className="container">
-        <div className="imgBox">
-          <Image src="/images/lounge3.jpg" width={1920} height={1280} />
-        </div>
         <div className="info">
           <div className="text">
             <h2 className="section-title">
@@ -95,7 +83,6 @@ const SectionOne = () => {
               service. We love to add a personal touch so that the customer
               feels that all of their needs are met.
             </p>
-            <Button>EXPLORE MORE</Button>
           </div>
         </div>
       </div>

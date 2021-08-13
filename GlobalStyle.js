@@ -18,7 +18,7 @@ const GlobalStyle = createGlobalStyle`
       --medium-title: clamp(2.5rem, 1.7408rem + 2.09vw, 3.5rem);
       --small-title: clamp(2.2rem, 1.3408rem + 1.89vw, 3rem);
       --sub-heading: clamp(1.5rem, 1.3776rem + 0.6531vw, 1.9rem);
-      --red: #FF3F00;
+      --red: #e82228;
       --black: #070707;
       --blue: #1098F7;
       --light: #F0F4EF;
@@ -32,7 +32,7 @@ const GlobalStyle = createGlobalStyle`
   body {
       line-height: 1.6;
       font-weight: var(--regular-font);
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Montserrat', sans-serif;
       color: var(--black);
   }
 
@@ -42,7 +42,7 @@ const GlobalStyle = createGlobalStyle`
 
   h1, h2, h3, h4, h5, h6 {
       line-height: 1.1;
-      font-family: 'Playfair Display', serif;
+      font-family: 'Montserrat', sans-serif;
   }
 
   h1 {

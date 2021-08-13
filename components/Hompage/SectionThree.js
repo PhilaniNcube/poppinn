@@ -36,7 +36,7 @@ const SectionThree = () => {
       <div className="container">
         <div className="text">
           <h2 className="section-title">
-            Loocking for a relaxing place to stay?
+            Looking for a relaxing place to stay?
           </h2>
           <p>
             Our properties are well appointend and are furnished to ensure that

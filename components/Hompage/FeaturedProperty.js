@@ -18,11 +18,14 @@ const Wrapper = styled.section`
     }
 
     .imgBox {
-      height: 100%;
+      height: 40vw;
+      width: 40vw;
+      margin: 0 auto;
       background-image: url('/images/lounge5.jpg');
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center center;
+      border-radius: 50%;
     }
 
     .details {

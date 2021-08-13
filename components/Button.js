@@ -7,10 +7,12 @@ const Button = styled.button`
   padding: 1.1rem 1.8rem;
   margin-top: 1rem;
   font-size: 1.8rem;
-  font-family: 'Roboto', sans-serif;
-  border: 1px solid var(--black);
+  font-weight: 700;
   color: #fff;
-  background-color: var(--black);
+  border: 1px solid var(--red);
+  outline: none;
+  border-radius: 2rem;
+  background-color: var(--red);
   text-transform: uppercase;
   overflow: hidden;
   transition: 0.2s;
@@ -18,8 +20,9 @@ const Button = styled.button`
   cursor: pointer;
 
   &:hover {
-    color: var(--black);
-    background-color: var(--light);
+    color: var(--red);
+    background-color: #fff;
+    border: 1px solid var(--red);
   }
 `;
 
