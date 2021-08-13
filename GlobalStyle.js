@@ -75,12 +75,13 @@ const GlobalStyle = createGlobalStyle`
   .section-title {
       font-size: var(--section-title);
       font-weight: var(--light-font);
-       font-family: 'Roboto', sans-serif;
+        font-family: 'Montserrat', sans-serif;
   }
 
   .sub-heading {
       font-size: var(--sub-heading);
       font-weight: var(--light-font);
+       font-family: 'Montserrat', sans-serif;
   }
 `;
 
