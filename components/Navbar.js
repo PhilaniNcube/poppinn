@@ -19,6 +19,11 @@ const Wrapper = styled.header`
 
     .logo {
       height: 100%;
+
+      @media screen and (max-width: 800px) {
+        height: 70%;
+        margin: auto 0;
+      }
       img {
         height: 100%;
         object-fit: cover;
@@ -47,6 +52,11 @@ const Wrapper = styled.header`
         border-radius: 2rem;
         font-weight: 700;
         cursor: pointer;
+
+        @media screen and (max-width: 800px) {
+          font-size: 1.3rem;
+          padding: 0.5rem 1rem;
+        }
       }
     }
   }
