@@ -26,6 +26,11 @@ const Wrapper = styled.section`
       background-repeat: no-repeat;
       background-position: center center;
       border-radius: 50%;
+
+      @media screen and (max-width: 800px) {
+        height: 80vw;
+        width: 80vw;
+      }
     }
 
     .details {
