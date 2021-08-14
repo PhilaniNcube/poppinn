@@ -1,5 +1,6 @@
 import { Fragment } from 'react';
 import styled from 'styled-components';
+import ContactForm from '../components/Hompage/ContactForm';
 import Description from '../components/Hompage/Description';
 import FeaturedProperty from '../components/Hompage/FeaturedProperty';
 import Hero from '../components/Hompage/Hero';
@@ -15,6 +16,7 @@ export default function Home() {
       <SectionOne />
       <FeaturedProperty />
       <SectionTwo />
+      <ContactForm />
     </Fragment>
   );
 }
