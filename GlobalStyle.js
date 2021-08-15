@@ -32,7 +32,7 @@ const GlobalStyle = createGlobalStyle`
   body {
       line-height: 1.6;
       font-weight: var(--regular-font);
-      font-family: 'Montserrat', sans-serif;
+     
       color: var(--black);
   }
 
