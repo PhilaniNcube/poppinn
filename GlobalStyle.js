@@ -42,7 +42,7 @@ const GlobalStyle = createGlobalStyle`
 
   h1, h2, h3, h4, h5, h6 {
       line-height: 1.1;
-      font-family: 'Montserrat', sans-serif;
+      
   }
 
   h1 {
@@ -75,13 +75,13 @@ const GlobalStyle = createGlobalStyle`
   .section-title {
       font-size: var(--section-title);
       font-weight: var(--light-font);
-        font-family: 'Montserrat', sans-serif;
+        
   }
 
   .sub-heading {
       font-size: var(--sub-heading);
       font-weight: var(--light-font);
-       font-family: 'Montserrat', sans-serif;
+       
   }
 `;
 
