@@ -27,12 +27,13 @@ const GlobalStyle = createGlobalStyle`
 
   html {
       font-size: 62.5%;
+     
   }
 
   body {
       line-height: 1.6;
-      font-family: 'Roboto', sans-serif;
       color: var(--black);
+      font-family: 'Georama', sans-serif;
   }
 
   p {
