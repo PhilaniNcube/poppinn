@@ -1,12 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
-  *, *::before, *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
 
   :root {
       --light-font: 300;
@@ -25,13 +19,21 @@ const GlobalStyle = createGlobalStyle`
       --yellow: #F8F272;
   }
 
+  *, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+
+
   html {
       font-size: 62.5%;
   }
 
   body {
       line-height: 1.6;
-      font-weight: var(--regular-font);
       font-family: 'Roboto', sans-serif;
       color: var(--black);
   }
