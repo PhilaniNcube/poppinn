@@ -32,6 +32,7 @@ const Wrapper = styled.div`
         font-size: var(--title);
         font-weight: 400;
         letter-spacing: 0.3rem;
+        font-family: 'Roboto', sans-serif;
       }
 
       p {

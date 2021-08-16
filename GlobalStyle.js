@@ -25,9 +25,6 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
-
-
-
   html {
       font-size: 62.5%;
   }
@@ -46,10 +43,6 @@ const GlobalStyle = createGlobalStyle`
       line-height: 1.1;
       
   }
-
-
-
-
 
   a {
       text-decoration: none;
