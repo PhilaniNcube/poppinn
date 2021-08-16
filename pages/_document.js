@@ -21,11 +21,29 @@ export default class MyDocument extends Document {
         styles: (
           <Fragment>
             <Head>
-              <link rel="preconnect" href="https://fonts.googleapis.com" />
-              <link rel="preconnect" href="https://fonts.gstatic.com" />
               <link
-                href="https://fonts.googleapis.com/css2?family=Georama:wght@300;400;700;900&display=swap"
-                rel="stylesheet"
+                rel="preload"
+                href="/fonts/Montserrat-Thin.ttf"
+                as="font"
+                crossOrigin=""
+              />
+              <link
+                rel="preload"
+                href="/fonts/Montserrat-Regular.ttf"
+                as="font"
+                crossOrigin=""
+              />
+              <link
+                rel="preload"
+                href="/fonts/Montserrat-Bold.ttf"
+                as="font"
+                crossOrigin=""
+              />
+              <link
+                rel="preload"
+                href="/fonts/Montserrat-Black.ttf"
+                as="font"
+                crossOrigin=""
               />
             </Head>
             {initialProps.styles}

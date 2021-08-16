@@ -2,6 +2,35 @@ import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
 
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Light.ttf");
+  font-style: light;
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Bold.ttf");
+  font-style: bold;
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Black.ttf");
+  font-style: black;
+  font-weight: 900;
+  font-display: swap;
+}
+
   :root {
       --light-font: 300;
       --regular-font: 400;
@@ -33,7 +62,7 @@ const GlobalStyle = createGlobalStyle`
   body {
       line-height: 1.6;
       color: var(--black);
-      font-family: 'Georama', sans-serif;
+       font-family: "Montserrat";
   }
 
   p {
