@@ -36,7 +36,7 @@ const GlobalStyle = createGlobalStyle`
       --regular-font: 400;
       --medium-font: 700;
       --bold-font:900; 
-      --title : clamp(3.5rem, 2.8878rem + 3.2653vw, 5.5rem);
+      --title : clamp(3.5rem, 2.3261rem + 5.2174vw, 6.5rem);
       --section-title :clamp(2.5rem, 2.0408rem + 2.4490vw, 4rem);
       --medium-title: clamp(2.5rem, 1.7408rem + 2.09vw, 3.5rem);
       --small-title: clamp(2.2rem, 1.3408rem + 1.89vw, 3rem);
