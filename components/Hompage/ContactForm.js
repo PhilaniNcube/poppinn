@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import Image from 'next/image';
 import Button from '../Button';
 
 const Wrapper = styled.section`
@@ -9,6 +10,23 @@ const Wrapper = styled.section`
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 3rem auto;
+
+    .imgBox {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      > div {
+        height: 60vh;
+        margin: auto;
+
+        img {
+          height: 20vh;
+        }
+      }
+    }
 
     .form {
       width: 100%;
@@ -56,7 +74,9 @@ const ContactForm = () => {
   return (
     <Wrapper>
       <div className="container">
-        <div className="imgBox"></div>
+        <div className="imgBox">
+          <Image src="/images/stacked_logo.svg" width={500} height={500} />
+        </div>
         <div className="form">
           <form onSubmit={handleSubmit}>
             <div className="input-group">
