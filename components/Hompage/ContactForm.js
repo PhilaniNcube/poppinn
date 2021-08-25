@@ -19,11 +19,13 @@ const Wrapper = styled.section`
       align-items: center;
 
       > div {
-        height: 60vh;
+        height: 100%;
         margin: auto;
 
         img {
-          height: 20vh;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 50%;
         }
       }
     }
@@ -75,7 +77,7 @@ const ContactForm = () => {
     <Wrapper>
       <div className="container">
         <div className="imgBox">
-          <Image src="/images/stacked_logo.svg" width={500} height={500} />
+          <Image src="/images/sol.jpg" width={500} height={500} />
         </div>
         <div className="form">
           <form onSubmit={handleSubmit}>

@@ -18,7 +18,7 @@ const Wrapper = styled.div`
 export default function Travel() {
   return (
     <Wrapper>
-      <img src="/images/stacked_logo.svg" alt="logo" />
+      <img src="/images/travel.svg" alt="logo" />
       <h1>Coming Soon!</h1>
     </Wrapper>
   );

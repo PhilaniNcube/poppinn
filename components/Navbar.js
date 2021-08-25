@@ -6,12 +6,16 @@ import Button from './Button';
 const Wrapper = styled.header`
   width: 100%;
   height: 10vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
 
   z-index: 1000;
 
   .container {
     height: 100%;
-    background-color: #fff;
+
     display: flex;
     align-items: center;
     padding: 10px 0;
@@ -78,6 +82,9 @@ const Navbar = () => {
           </Link>
           <Link href="/travel">
             <a className="nav-link">Travel</a>
+          </Link>
+          <Link href="#">
+            <a className="nav-link">About Us</a>
           </Link>
           <button>Book Now</button>
         </nav>

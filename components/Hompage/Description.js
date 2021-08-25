@@ -4,7 +4,10 @@ import styled from 'styled-components';
 
 const Wrapper = styled.section`
   width: 100%;
-
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url('/images/outline.svg');
   margin: 3rem 0;
 
   .container {
