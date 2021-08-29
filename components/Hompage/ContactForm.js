@@ -11,6 +11,10 @@ const Wrapper = styled.section`
     grid-template-columns: 1fr 1fr;
     margin: 3rem auto;
 
+    @media screen and (max-width: 800px) {
+      grid-template-columns: 1fr;
+    }
+
     .imgBox {
       width: 100%;
       height: 100%;
