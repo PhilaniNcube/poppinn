@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import styled from 'styled-components';
 import Button from './Button';
+import { useRouter } from 'next/router';
 
 const Wrapper = styled.header`
   width: 100%;
@@ -67,6 +68,12 @@ const Wrapper = styled.header`
 `;
 
 const Navbar = () => {
+  const router = useRouter();
+
+  const navigate = () => {
+    router.push('http://www.booking.com/Share-lfWNCr');
+  };
+
   return (
     <Wrapper>
       <div className="container">
@@ -83,10 +90,10 @@ const Navbar = () => {
           <Link href="/travel">
             <a className="nav-link">Travel</a>
           </Link>
-          <Link href="#">
+          <Link href="/about">
             <a className="nav-link">About Us</a>
           </Link>
-          <button>Book Now</button>
+          <button onClick={navigate}>Book Now</button>
         </nav>
       </div>
     </Wrapper>

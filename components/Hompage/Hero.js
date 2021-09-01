@@ -94,7 +94,7 @@ const Hero = () => {
   const timer = useRef();
   const [sliderRef, slider] = useKeenSlider({
     loop: true,
-    duration: 1000,
+    duration: 2000,
     dragStart: () => {
       setPause(true);
     },
@@ -117,7 +117,7 @@ const Hero = () => {
       if (!pause && slider) {
         slider.next();
       }
-    }, 2000);
+    }, 4500);
     return () => {
       clearInterval(timer.current);
     };
